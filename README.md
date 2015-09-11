@@ -1,12 +1,14 @@
 # shade-app-maven-plugin
 
-Maven plugin that configures the maven shade plugin to create a fat jar with main class attribute.
+Maven plugin that configures the maven shade plugin to create a fat jar with main class attribute triggering on packaging `app`.
 
 # Usage
 
-Add to pom.xml
+Add to `pom.xml`
 
 ```xml
+<packaging>app</packaging>
+
 <properties>
   <mainClass>pkg.Main</mainClass>
 </properties>
