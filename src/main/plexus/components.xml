@@ -18,6 +18,9 @@
           <lifecycle>
             <id>default</id>
             <phases>
+              <validate>
+               so.born:shade-app-maven-plugin:${project.version}:validate
+              </validate>
               <process-resources>
                 org.apache.maven.plugins:maven-resources-plugin:resources
               </process-resources>
