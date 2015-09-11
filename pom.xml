@@ -12,4 +12,33 @@
       <version>3.2.2</version>
     </dependency>
   </dependencies>
+
+  <scm>
+    <connection>scm:git:https://github.com/jwiklund/shade-app-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:shade-app-maven-plugin/shade-app-maven-plugin.git</developerConnection>
+    <url>https://github.com/jwiklund/shade-app-maven-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray</id>
+      <url>https://api.bintray.com/maven/jwiklund/so.born/shade-app-maven-plugin</url>
+    </repository>
+  </distributionManagement>
+
+
+  <build>
+    <plugins>
+      <plugin>
+	<artifactId>maven-release-plugin</artifactId>
+	<version>2.4.1</version>
+	<configuration>
+          <useReleaseProfile>false</useReleaseProfile>
+          <releaseProfiles>release</releaseProfiles>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
