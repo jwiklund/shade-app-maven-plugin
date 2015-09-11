@@ -11,6 +11,16 @@ Add to pom.xml
   <mainClass>pkg.Main</mainClass>
 </properties>
 
+<build>
+  <extensions>
+    <extension>
+      <groupId>so.born</groupId>
+      <artifactId>shade-app-maven-plugin</artifactId>
+      <version>1.1</version>
+    </extension>
+  </extensions>
+</build>
+
 <pluginRepositories>
   <pluginRepository>
     <snapshots>
