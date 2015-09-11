@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>so.born</groupId>
   <artifactId>shade-app-maven-plugin</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
   <dependencies>
     <dependency>
@@ -21,7 +21,7 @@
     <connection>scm:git:https://github.com/jwiklund/shade-app-maven-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jwiklund/shade-app-maven-plugin.git</developerConnection>
     <url>https://github.com/jwiklund/shade-app-maven-plugin</url>
-    <tag>shade-app-maven-plugin-1.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
